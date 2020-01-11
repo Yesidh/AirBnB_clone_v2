@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Bash script that sets up the web servers for the deployment of web_static
 
-if [ $which nginx ]; then
-    echo "nginx ya instalado"
-else
-    sudo apt-get update
-    sudo apt-get -y install nginx
-fi
+# if [ $which nginx ]; then
+#    echo "nginx ya instalado"
+# else
+sudo apt-get update
+sudo apt-get -y install nginx
+# fi
 sudo mkdir -p data/web_static/shared/
 sudo mkdir -p data/web_static/releases/test/
 echo Holberton School | sudo tee /data/web_static/releases/test/index.html
