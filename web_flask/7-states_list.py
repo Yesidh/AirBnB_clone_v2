@@ -19,6 +19,7 @@ from models import storage
 
 app = Flask(__name__)
 
+
 @app.teardown_appcontext
 def teardown_appcontext():
     """Method tho handle teardown"""
