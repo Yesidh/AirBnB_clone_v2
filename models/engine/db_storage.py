@@ -59,7 +59,7 @@ class DBStorage:
 """
         my_dict = {}
         if cls:
-            query = self.__session.query(cls)
+            query = self.__session.query(eval(cls))
             for obj in query:
                 key = "{}.{}".format(type(obj).__name__, obj.id)
                 my_dict[key] = obj
