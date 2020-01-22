@@ -8,6 +8,7 @@
     <UL>
       {% for city in my_list|sort(attribute='name') %}
       <LI>{{ state.id }}: <B>{{ state.name }}</B></LI>
+      {% endfor %}
     </UL>
   </BODY>
 </HTML>
