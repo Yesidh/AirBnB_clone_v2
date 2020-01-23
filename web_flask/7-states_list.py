@@ -21,7 +21,7 @@ app = Flask(__name__)
 
 
 @app.teardown_appcontext
-def teardown_appcontext():
+def teardown_appcontext(self):
     """Method tho handle teardown"""
 
     storage.close()
