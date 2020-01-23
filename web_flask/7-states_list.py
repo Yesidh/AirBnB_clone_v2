@@ -31,7 +31,7 @@ def teardown_appcontext():
 def states():
     """method"""
 
-    my_list = storage.all('state')
+    my_list = storage.all('State').values()
     return render_template('7-states_list.html', _list=my_list)
 
 if __name__ == "__main__":
