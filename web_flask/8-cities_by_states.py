@@ -35,7 +35,7 @@ def states():
     return render_template('7-states_list.html', _list=my_list)
 
 
-@app.route('/cities_by_states')
+@app.route('/cities_by_states', strict_slashes=False)
 def cities_by_states():
     """method to show cities by states"""
 
